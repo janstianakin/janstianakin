@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @janstianakin
-- 👀 I’m interested in iOS, Web
+- 👀 I’m interested in iOS, Web, Node
 - 🌱 I’m currently learning Web Developing
 - 💞️ I’m looking to collaborate on developing H5 items.
 - 📫 How to reach me: email to janstianakin@gmail.com.
