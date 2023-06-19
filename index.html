@@ -1,12 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
-    <title>yixiantong</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <div class="main">
+      <div>
+        <label for="date-container">选择日期：</label>
+        <input type="text" id="date-container" disabled />
+      </div>
+
+      <div id="gw--datetimepicker">
+				<!-- 对于 Header 来说, 就是左右显示, 然后是年月的显示. -->
+        <header id="gw--datetimepicker-header">
+          <ul>
+            <li id="gw--datetimepicker-prev">&lt;</li>
+            <li id="gw--datetimepicker-selected-year">0000</li>
+            <li id="gw--datetimepicker-selected-month">00</li>
+            <li id="gw--datetimepicker-next">&gt;</li>
+          </ul>
+        </header>
+        <div id="gw--datetimepicker-body" data-selected="day">
+          <div
+            id="gw--datetimepicker-year"
+            class="gw--datetimepicker-box"
+            style="display: none"
+          >
+            <table>
+              <tbody id="gw--datetimepicker-year-body"></tbody>
+            </table>
+          </div>
+          <div
+            id="gw--datetimepicker-month"
+            class="gw--datetimepicker-box"
+            style="display: none"
+          >
+            <table>
+              <tbody id="gw--datetimepicker-month-body">
+                <tr>
+                  <td class="gw--month">1</td>
+                  <td class="gw--month">2</td>
+                  <td class="gw--month">3</td>
+                  <td class="gw--month">4</td>
+                </tr>
+                <tr>
+                  <td class="gw--month">5</td>
+                  <td class="gw--month">6</td>
+                  <td class="gw--month">7</td>
+                  <td class="gw--month">8</td>
+                </tr>
+                <tr>
+                  <td class="gw--month">9</td>
+                  <td class="gw--month">10</td>
+                  <td class="gw--month">11</td>
+                  <td class="gw--month">12</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            id="gw--datetimepicker-day"
+            class="gw--datetimepicker-box"
+            style="display: block"
+          >
+            <table>
+              <thead>
+                <tr>
+                  <th>日</th>
+                  <th>一</th>
+                  <th>二</th>
+                  <th>三</th>
+                  <th>四</th>
+                  <th>五</th>
+                  <th>六</th>
+                </tr>
+              </thead>
+              <tbody id="gw--datetimepicker-day-body"></tbody>
+            </table>
+          </div>
+        </div>
+				<!-- 对于 Footer 来说, 就只有一个按钮, 就是今天.  -->
+        <footer id="gw--datetimepicker-footer">
+          <button id="gw--now">今天</button>
+        </footer>
+      </div>
+
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
